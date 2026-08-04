@@ -176,6 +176,23 @@
   .service-card h3 { font-size: 1.15rem; margin-bottom: 8px; }
   .service-card p { color: var(--text-dim); font-size: 0.92rem; }
 
+  /* REVIEWS */
+  .review-badge-wrap { display: flex; justify-content: center; }
+  .review-badge {
+    background: var(--card);
+    border: 1px solid rgba(212,175,55,0.4);
+    border-radius: 20px;
+    padding: 40px 60px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 0 rgba(212,175,55,0);
+  }
+  .review-badge:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(212,175,55,0.15); }
+  .review-badge .stars { color: var(--gold); font-size: 1.8rem; letter-spacing: 4px; }
+  .review-badge .review-score { font-size: 1.6rem; font-weight: 800; margin-top: 10px; }
+  .review-badge .review-count { color: var(--text-dim); margin-top: 6px; font-size: 0.9rem; }
+  .review-badge .review-link { color: var(--gold-light); margin-top: 18px; font-weight: 600; font-size: 0.92rem; }
+
   /* WHY IT MATTERS */
   .compare {
     background: var(--bg-alt);
@@ -294,6 +311,22 @@
       <h3>Headlight Polishing</h3>
       <p>Restore cloudy, yellowed headlights back to clear and bright.</p>
     </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="section-head">
+    <div class="tag">Reputation</div>
+    <h2>Verified 5.0★ on Google</h2>
+    <p>Every review is real, from real customers, straight off MST Detailing's Google Business profile.</p>
+  </div>
+  <div class="review-badge-wrap">
+    <a class="review-badge" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x27aa61da387f6d8f:0xebb7b09561bc5db3" target="_blank" rel="noopener">
+      <div class="stars">★★★★★</div>
+      <div class="review-score">5.0 out of 5</div>
+      <div class="review-count">Based on verified Google reviews</div>
+      <div class="review-link">View reviews on Google →</div>
+    </a>
   </div>
 </section>
 
